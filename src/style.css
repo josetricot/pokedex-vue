@@ -1,0 +1,36 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, Helvetica, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+
+#app {
+    max-width: 1200;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/*galeria visual*/
+.pokemon-gallery {
+    display: grid; /*cria grid responsivo*/
+    grid-template-columns: repeat(auto-fit, minimax(150px, 1fr));
+    gap: 16px; /*espaço entre os cards*/
+}
+
+/*mensagem de status*/
+.loading,
+.error {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 40px;
+    color: #666;
+}
+
+.error {
+    color: #d93025;
+}
